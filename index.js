@@ -10,8 +10,8 @@ app.get('/', (req, res) => {
 })
 
 /*GET 404 Page*/
-app.get('/', (req, res) => {
-    res.send('<h1>404 This page does not exist</h1>')
+app.get('*', (req, res) => {
+    res.status(404).send('<h1>404 Page does not exist</h1>')
 })
 
 app.listen(process.env.PORT)
