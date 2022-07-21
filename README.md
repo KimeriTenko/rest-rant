@@ -5,7 +5,11 @@ REST-Rant is an app where users can review restaurants.
 
 ###Table of Contents
 
-###How to Install and Run the Project
+###Technical Components Used
+CSS Framework: Boostrap
+Stack: MongoDB, Express, NodeJS
+Server-Side Rendering: JSX
+Node Modules: method-override, dotenv, express-react-views
 
 ###How to Use the Project
 
@@ -49,6 +53,12 @@ Delete a rant (comment) about a particular place
 
 GET*
 404 page (matches any route not defined above)
+
+###User Stories
+
+
+
+###Wireframes
 
 <!-- 
 # The largest heading

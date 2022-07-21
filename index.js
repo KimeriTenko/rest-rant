@@ -1,20 +1,24 @@
+/*Globals and Modules*/
 require('dotenv').config()
 const express = require('express')
 const app = express()
 
+/*Express Settings*/
 app.set('view engine', 'jsx')
 app.engine('jsx', require('express-react-views').createEngine())
 
 app.use('/places', require('./controllers/places'))
 
+/*Controllers and Routes*/
+
 /*GET   /Homepage*/
 app.get('/', (req, res) => {
-    res.sender('home')
+    res.render('home')
 })
 
 /*GET 404 Page*/
 app.get('*', (req, res) => {
-    res.status(404).send('<h1>404 Page does not exist</h1>')
+    res.render('error 404')
 })
 
 app.listen(process.env.PORT)
