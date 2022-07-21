@@ -7,7 +7,6 @@ const app = express()
 app.set('view engine', 'jsx')
 app.engine('jsx', require('express-react-views').createEngine())
 
-
 /*Controllers and Routes*/
 
 app.use('/places', require('./controllers/places'))
@@ -21,27 +20,6 @@ app.get('/', (req, res) => {
 app.get('*', (req, res) => {
     res.render('error 404')
 })
-
-/*GET   /places/new   Form to create a new place*/
-app.get('/', (req, res) => {
-    let places = [{
-        let places = [{
-            name: 'H-Thai-ML',
-            city: 'Seattle',
-            state: 'WA',
-            cuisines: 'Thai, Pan-Asian',
-            pic: 'http://placekitten.com/250/250'
-          }, {
-            name: 'Coding Cat Cafe',
-            city: 'Phoenix',
-            state: 'AZ',
-            cuisines: 'Coffee, Bakery',
-            pic: 'http://placekitten.com/250/250'
-          }]
-          
-    }]
-    res.render('places/index')
-  })
 
 /*Listen for Connections*/
 app.listen(process.env.PORT)
