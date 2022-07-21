@@ -54,6 +54,19 @@ Delete a rant (comment) about a particular place
 GET*
 404 page (matches any route not defined above)
 
+***Places Array***
+Field Name/Data Type
+
+name/string
+
+city/string
+
+state/string
+
+cuisines/string
+
+pic/string (a URL)
+
 ###User Stories
 
 
