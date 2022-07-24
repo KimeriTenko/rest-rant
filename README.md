@@ -1,12 +1,12 @@
 # Project REST-Rant
 
-## Project Decription
+## Project Description
 REST-Rant is an app where users can review restaurants.
 
 ### Table of Contents ###
 
 ### Technical Components Used 
-CSS Framework: Boostrap
+CSS Framework: Bootstrap
 Stack: MongoDB, Express, NodeJS
 Server-Side Rendering: JSX
 Node Modules: method-override, dotenv, express-react-views
@@ -71,7 +71,7 @@ pic/string (a URL)
 
 
 
-### Wireframes 
+### Wire Frames 
 
 <!-- 
 # The largest heading
