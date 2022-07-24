@@ -67,11 +67,11 @@ cuisines/string
 
 pic/string (a URL)
 
-###** User Stories **###
+### User Stories
 
 
 
-###** Wireframes **###
+### Wireframes 
 
 <!-- 
 # The largest heading
