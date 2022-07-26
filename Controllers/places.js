@@ -1,5 +1,5 @@
 const router = require('express').Router()
-const db = require('../models')
+const db = require('../models/places.js')
 
 /*GET /places*/
 router.get('/', (req, res) => {
@@ -130,38 +130,6 @@ router.delete('/:id/comment/:commentId', (req, res) => {
       })
 })
 
-router.get('/', (req, res) => {
-    let places = [{
-        name: 'H-Thai-ML',
-        city: 'Seattle',
-        state: 'WA',
-        cuisines: 'Thai, Pan-Asian',
-        pic: '/images/H-Thai-ML.jpg'
-      }, {
-        name: 'Coding Cat Cafe',
-        city: 'Phoenix',
-        state: 'AZ',
-        cuisines: 'Coffee, Bakery',
-        pic: '/images/Coding-Cat-Cafe.jpg'
-      }]
-      
-    res.render('places/index', {places})
-})
+
 
 module.exports = router
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
