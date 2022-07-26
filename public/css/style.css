@@ -1,5 +1,5 @@
 body {
-    background-color: lightblue;
+    background-color: #FB8500;
     text-align: center;
 }
 
@@ -10,7 +10,7 @@ h1 {
 
 
   h2 {
-    color: #FB8500;
+    color: #8B80F9;
 }
 
 main {
@@ -41,7 +41,7 @@ nav a {
 }
 
 nav a:hover {
-    color: lightblue;
+    color: #F8C0C8;
     text-decoration: none;
 }
 
