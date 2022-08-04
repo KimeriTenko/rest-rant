@@ -37,9 +37,9 @@ router.post('/', (req, res) => {
 })
 
 /*GET   /places/new*/
-// router.get('/new', (req, res) => {
-//   res.render('places/new')
-// })
+router.get('/new', (req, res) => {
+  res.render('places/new')
+})
 
 /*GET   /places/:id   Show page containing details for a specific place (including a comment form to post rants)*/
 router.get('/:id', (req, res) => {
@@ -79,15 +79,15 @@ router.delete('/:id', (req, res) => {
       })
 })
 
-/*GET   /places/:id/edit   Edit form for a place*/
+/*GET /places/id:/edit Edit an existing place*/
 router.get('/:id/edit', (req, res) => {
-  db.Place.findById(req.params.id)
-      .then(place => {
-          res.render('places/edit', { places: [id]})
-      })
-      .catch(err => {
-          res.render('error404')
-      })
+    db.Place.findById(req.params.id)
+        .then(place => {
+            res.render('places/edit', { place })
+        })
+        .catch(err => {
+            res.render('error404')
+        })
 })
 
 /*POST   /places/:id/rant   Post a rant (comment) about a specific place*/
