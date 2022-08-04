@@ -10,7 +10,7 @@ async function seed() {
         author: 'Famished Fran',
         rant: false,
         stars: 5.0,
-        content: 'Wow, simply amazing food here. I highly recommend this to anyone visiting the area!'
+        content: 'Wow, simply amazing food here. I went to the one in Thailand, but this is the best location!'
     })
 
     // Add that comment to the place's comment array
