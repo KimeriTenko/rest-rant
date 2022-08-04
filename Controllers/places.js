@@ -37,9 +37,9 @@ router.post('/', (req, res) => {
 })
 
 /*GET   /places/new*/
-router.get('/new', (req, res) => {
-  res.render('places/new')
-})
+// router.get('/new', (req, res) => {
+//   res.render('places/new')
+// })
 
 /*GET   /places/:id   Show page containing details for a specific place (including a comment form to post rants)*/
 router.get('/:id', (req, res) => {
@@ -47,7 +47,7 @@ router.get('/:id', (req, res) => {
       .populate('comments')
       .then(place => {
           console.log(place.comments)
-          res.render('places/show', { place })
+          res.render('places/show', { place:places[id], id})
       })
       .catch(err => {
           console.log('err', err)
@@ -83,7 +83,7 @@ router.delete('/:id', (req, res) => {
 router.get('/:id/edit', (req, res) => {
   db.Place.findById(req.params.id)
       .then(place => {
-          res.render('places/edit', { place })
+          res.render('places/edit', { places: [id]})
       })
       .catch(err => {
           res.render('error404')
@@ -129,7 +129,5 @@ router.delete('/:id/comment/:commentId', (req, res) => {
           res.render('error404')
       })
 })
-
-
 
 module.exports = router

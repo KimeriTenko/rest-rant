@@ -2,6 +2,12 @@ body {
     background-color: #FB8500;
     text-align: center;
 }
+main {
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 20px;
+    background-color: white;
+}
 
 h1 {
     text-align: center;
@@ -11,13 +17,6 @@ h1 {
 
   h2 {
     color: #8B80F9;
-}
-
-main {
-    margin-right: 20px;
-    margin-left: 20px;
-    padding: 20px;
-    background-color: white;
 }
 
 nav {
